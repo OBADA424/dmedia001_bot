@@ -1,0 +1,31 @@
+{
+  "name": "TikTok Instagram Telegram Bot",
+  "description": "A powerful bot to download TikTok and Instagram content via Telegram",
+  "repository": "https://github.com/yourusername/media-downloader-bot",
+  "logo": "https://avatars.githubusercontent.com/u/1?v=4",
+  "keywords": ["telegram", "bot", "tiktok", "instagram", "downloader", "python"],
+  "stack": "container",
+  "env": {
+    "TELEGRAM_BOT_TOKEN": {
+      "description": "Your Telegram Bot Token from @BotFather",
+      "value": "8434259985:AAFFJ-EEj2x5HzysYvK4Ag0t8yJHz0Hy4o8",
+      "required": true
+    },
+    "ADMIN_USER_ID": {
+      "description": "Your Telegram User ID for admin commands",
+      "value": "933343496",
+      "required": true
+    }
+  },
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "basic"
+    }
+  },
+  "addons": [
+    {
+      "plan": "heroku-postgresql:mini"
+    }
+  ]
+}

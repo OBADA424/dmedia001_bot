@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: media-downloader-bot
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python main.py"
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: TELEGRAM_BOT_TOKEN
+        value: 8434259985:AAFFJ-EEj2x5HzysYvK4Ag0t8yJHz0Hy4o8
+      - key: ADMIN_USER_ID
+        value: 933343496
+      - key: PYTHONUNBUFFERED
+        value: "1"
+    disk:
+      name: media-storage
+      mountPath: /app/downloads
+      sizeGB: 1

@@ -1,0 +1,33 @@
+bot:
+  token: "8434259985:AAFFJ-EEj2x5HzysYvK4Ag0t8yJHz0Hy4o8"
+  admin_user_id: 933343496  # Your Telegram user ID for admin commands
+
+downloads:
+  output_dir: "./downloads"
+  temp_dir: "./temp"
+  max_file_size_mb: 50
+  concurrent_downloads: 3
+  cleanup_after_hours: 24
+
+tiktok:
+  quality: "best"
+  format: "mp4"
+  extract_audio: false
+
+instagram:
+  quality: "best"
+  download_stories: true
+  download_reels: true
+  download_posts: true
+
+logging:
+  level: "INFO"
+  file: "bot.log"
+  max_file_size_mb: 10
+  backup_count: 5
+
+captions:
+  include_username: true
+  include_date: true
+  include_platform: true
+  max_length: 200

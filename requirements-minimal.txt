@@ -1,0 +1,9 @@
+yt-dlp
+python-telegram-bot
+instaloader
+aiohttp
+aiofiles
+python-dotenv
+pyyaml
+pillow
+requests
